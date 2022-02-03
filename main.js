@@ -3,9 +3,10 @@ const computerMove = document.querySelector("#computer-move");
 const playerScore = document.querySelector("#player-score");
 const computerScore = document.querySelector("#computer-score");
 const resultDisplay = document.querySelector("#result");
+const options = document.querySelector(".options");
 const button = document.getElementsByTagName("button");
 
-// const rock = document.getElementById("rock");
+// const rock = document.getElementById("rock").parentElement;
 // const paper = document.querySelector("paper");
 // const scissor = document.querySelector("scissor");
 
