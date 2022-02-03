@@ -12,28 +12,38 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <div class="game theme">
         <div class="header theme">
           <div class="header-left">
-            <h2>Rock</h2>
-            <h2>Paper</h2>
-            <h2>Scissor</h2>
+            <h2><i class="far fa-gem">Rock</i></h2>
+            <h2><i class="fa fa-toilet-paper">Paper</i></h2>
+            <h2><i class="fas fa-cut"> Scissor</i></h2>
           </div>
           <div class="header-right">
-            <h3>The Best out of 10 WINS!!</h3>
+            <h3>Can you Beat the Machine?</h3>
           </div>
         </div>
 
         <div class="action theme">
-          <div id="player-move" class="move"></div>
+          <div class="title">
+            <h1>Player</h1>
+            <h1>Machine</h1>
+          </div>
+          <div id="player-move" class="move">Choice:</div>
           <div id="player-score" class="num">0</div>
           <div class="division"></div>
           <div id="computer-score" class="num">0</div>
-          <div id="computer-move" class="move"></div>
-          <div id="result" class="result"></div>
+          <div id="computer-move" class="move">Choice:</div>
+          <div id="result" class="result">RESULT</div>
         </div>
 
         <div class="options theme">
@@ -44,6 +54,7 @@
           <button class="button">
             <i id="scissor" class="fas fa-cut"></i>
           </button>
+          <h3>Pick your Move</h3>
         </div>
       </div>
     </div>
