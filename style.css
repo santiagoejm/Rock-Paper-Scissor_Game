@@ -96,12 +96,13 @@ body {
   height: 23vh;
   border-radius: 50%;
   background-color: #fafafa;
+  margin: 0 5px;
 }
 
 .action .num {
   width: 20%;
   height: 17vh;
-  font-size: 12vw;
+  font-size: 8vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,13 +126,13 @@ body {
   position: absolute;
   width: 15vw;
   height: 4vh;
-  border: 1px solid #fafafa;
   bottom: 1rem;
   left: calc(50% - 15vw / 2);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 100%;
+  visibility: hidden;
 }
 
 .options {

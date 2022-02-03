@@ -19,8 +19,6 @@ const clickHandler = (e) => {
   player = e.target.id;
   playerMove.textContent = player;
   pcMove();
-  getResult(player, pc);
-  updateScore();
 };
 
 const pcMove = () => {
@@ -33,6 +31,7 @@ const pcMove = () => {
     pc = "scissor";
   }
   computerMove.textContent = pc;
+  getResult(player, pc);
 };
 
 const getResult = (player, pc) => {
@@ -54,6 +53,22 @@ const getResult = (player, pc) => {
       break;
   }
   resultDisplay.textContent = result;
+  changeColor();
+  updateScore();
+};
+
+const changeColor = () => {
+  let color;
+  if (result == "YOU LOSE!!") {
+    color = "#A90A0A";
+  } else if (result == "YOU WIN!!") {
+    color = "#189C0A";
+  } else {
+    color = "#fafafa";
+  }
+  resultDisplay.style.visibility = "visible";
+  resultDisplay.style.color = color;
+  resultDisplay.style.border = `1px dashed ${color}`;
 };
 
 const updateScore = () => {
