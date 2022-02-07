@@ -102,10 +102,11 @@ body {
 .action .num {
   width: 20%;
   height: 17vh;
-  font-size: 8vw;
+  font-size: 8.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "VT323", monospace;
 }
 
 .action .move {
